@@ -134,7 +134,7 @@ public class LoginUI extends javax.swing.JFrame {
             String passWord = passText.getText();
             
             Statement st = con.createStatement();
-            String query = "select * from where username='" + userName + "'and password='" + passWord + "'";
+            String query = "select * from UserTable where username='" + userName + "'and password='" + passWord + "'";
             ResultSet rs = st.executeQuery(query);
             
             if(rs.next()){
