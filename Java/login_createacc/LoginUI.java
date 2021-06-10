@@ -129,7 +129,7 @@ public class LoginUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:");
+            Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/javadatabase", "Karan", "1234");
             String userName = userText.getText();
             String passWord = passText.getText();
             
