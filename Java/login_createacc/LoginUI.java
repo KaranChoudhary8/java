@@ -156,7 +156,7 @@ public class LoginUI extends javax.swing.JFrame {
 
     private void createAccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createAccActionPerformed
         // TODO add your handling code here:
-        CreateAccount newAccount = new CreateAccount();
+        CreateAccount newAccount = new CreateAccount(userName);
         newAccount.show();
     }//GEN-LAST:event_createAccActionPerformed
 
